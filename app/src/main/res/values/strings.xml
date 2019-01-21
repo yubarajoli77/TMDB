@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TMDB Stack</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="not_avialable">Not Avialable</string>
+    <string name="n_a">N/A</string>
+    <string name="search">Search</string>
+    <string name="search_movie">Search Movie...</string>
+
+    <string-array name="movie_tabs">
+        <item>POPULAR</item>
+        <item>TOP RATED</item>
+        <item>SHOWING</item>
+        <item>UPCOMING</item>
+
+    </string-array>
+
+    <string name="wifi_off_msg">Your wifi or mobile Data is off</string>
+    <string name="goto_wifi_setting">Go to wifi Setting</string>
+    <string name="no_internet_available">Connected to network but no Internet</string>
+    <string name="something_worng_with_server">Apology, something went wrong with our server</string>
+</resources>

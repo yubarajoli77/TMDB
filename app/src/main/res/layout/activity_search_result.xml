@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SearchResultActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:id="@+id/ll_as_search_box_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/custom_search_box_bg_design"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorTransparent"
+                android:padding="10dp"
+                android:src="@drawable/ic_tmdb_logo" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/sv_as_search_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="bottom"
+                android:imeOptions="actionSearch|flagNoExtractUi|flagNoFullscreen"
+                android:inputType="text"
+                android:theme="@style/CustomSearchViewStyle"
+                app:iconifiedByDefault="false"
+                app:searchIcon="@null" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sr_movie_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn_sr_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/pb_sr_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_sr_movie_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rv_sr_movie_container"
+        app:layout_constraintTop_toTopOf="@+id/rv_sr_movie_container"
+        android:elevation="10dp"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_sr_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_home_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        //For Transparent status bar
+    </style>
+    <style name="AppTheme.NoActionBar.TransparentStatus" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    //For Material design
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //For Search view
+    <style name="CustomSearchViewStyle" parent="Base.Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/cardview_dark_background</item>
+        <item name="android:queryHint">@string/search_movie</item>
+        <item name="searchIcon">@drawable/ic_search_dark_gray</item>
+        <item name="android:textColorSecondary">@color/colorBlack</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    //Dialog animation
+    <style name="DialogAnimationUpBottom">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+</resources>
